@@ -3,19 +3,13 @@ inner_width=28;
 inner_length=15;
 inner_height=70;
 
-//cube
-
-inner_width=20;
-inner_length=20;
-inner_height=20;
-
 thickness = 2;
 cover_thickness = 1;
 skin = 0.4;
 cover_overlap=2;
 
-length = inner_length+thickness;
-width = inner_width+thickness;
+length = inner_length+thickness*2;
+width = inner_width+thickness*2;
 height = inner_height+cover_overlap;
 overall_length = length*2+width*2+skin/2*3;
 
@@ -89,10 +83,10 @@ module lid() {
         }
     }
 }
-translate([0,-height-2,0]) {
-    box();
-}
-translate([width+2,0,0]) {
-    lid();
-}
+//translate([0,-height-2,0]) {
+//    box();
+//}
+//translate([width+2,0,0]) {
+//    lid();
+//}
 lid();
