@@ -83,10 +83,10 @@ module lid() {
         }
     }
 }
-//translate([0,-height-2,0]) {
-//    box();
-//}
-//translate([width+2,0,0]) {
-//    lid();
-//}
+translate([0,-height-2,0]) {
+    box();
+}
+translate([width+2,0,0]) {
+    lid();
+}
 lid();
